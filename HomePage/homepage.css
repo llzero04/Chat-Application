@@ -1,0 +1,77 @@
+*{
+    margin:0%;
+    padding:0%;
+    border:0px;
+}
+body{
+    background-image:url("../HomePage/background.svg");
+    background-color:#777;
+}
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    background-color:black;
+    margin-top:0%;
+    height: 10vh;
+
+}
+.navbar>button{
+    padding:10px;
+    border-radius:7px;
+    margin:10px;
+}
+.navbar>a{
+    text-decoration:none;
+}
+#mainTitle{
+    font-family:Impact;
+    color:white;
+    font-size:50px;
+    margin: 10px;
+}
+.navbar>button:hover{
+    background-color:#777;
+    color:white;
+    transform: scale(1.1);
+}
+
+#tagline{
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top:200px;
+    font-size:7rem;
+    margin-bottom:20vh;
+}
+
+.aboutUs
+{
+    margin: 20px;
+}
+
+.aboutUs>h2{
+    font-size:4rem;
+    text-align: center;
+    text-decoration:underline;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutUs>p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+    margin:15px 20px;
+}
+
+.horizontalRule{
+    height:5px;
+    width:90%;
+    margin:10px 5%;
+    background-color:cyan;
+    border-radius:3px;
+}

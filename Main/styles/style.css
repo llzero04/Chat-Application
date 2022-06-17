@@ -1,0 +1,261 @@
+*
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /*background-color: #aaa;*/
+    background-color: #777;
+    background-image: url('../images/background.svg');
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navBar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainHeader
+{
+    text-align: left;
+    margin: 10px 10px;
+    font-family: Impact;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+.navBar > button
+{
+    margin: 10px;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 5px 15px #555;
+}
+
+.navBar > button:hover
+{
+    background-color: #333;
+}
+
+/*----------------------------------------------------------*/
+
+.mainWrapper
+{
+    display: grid;
+
+    grid-template-columns: repeat(7 , 1fr);
+
+    justify-items:normal;
+
+    column-gap: 10px;
+
+    padding: 10px 20px;
+
+    /* outline: 3px solid red; */
+}
+
+.userProfile
+{
+    grid-column: 1/3;
+
+    align-self: start;
+
+    border-radius: 10px;
+
+    /* text-align: center; */
+
+    padding: 10px;
+
+    background-color: #000;
+    color: #fff;
+
+    box-shadow: 0px 5px 15px #555;
+}
+
+.userProfile > h2
+{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.userProfile > div
+{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555;
+
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+.chatAreaWrapper
+{
+    grid-column: 3/6;
+
+    align-self: start;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: #000;
+    color: #fff;
+
+    box-shadow: 0px 5px 15px #555;
+}
+
+.chatArea
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 72vh;
+    margin: 10px;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    overflow-y: auto;
+
+    background-color: #555;
+    color: #fff;
+}
+
+.userMessages
+{
+    width: fit-content;
+    max-width: 60%;
+
+    padding: 7px;
+    margin: 5px 0;
+    margin-left: auto;
+
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.othersMessages
+{
+    width: fit-content;
+    max-width: 60%;
+
+    padding: 7px;
+    margin: 5px 0;
+    margin-right: auto;
+
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.inputArea
+{
+    display: flex;
+    width: 100%;
+    
+    flex-direction: row;
+    
+    align-items: center;
+    
+}
+
+.inputArea > input
+{
+    width: 80%;
+    height: 30px;
+    
+    margin: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+
+    background-color: #555;
+    color: #fff;
+    outline: none;
+}
+
+
+.inputArea > button
+{
+    width: 15%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*---------------------------------------------------------------------*/
+
+.friendList
+{
+    grid-column: 6/8;
+
+    align-self: start;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    
+    background-color: #000;
+    color: #fff;
+
+    box-shadow: 0px 5px 15px #555;
+
+    overflow-y: auto;
+}
+
+.friendList > h2
+{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.userFriend
+{
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 800px) {
+    .mainWrapper
+    {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .userProfile
+    {
+        grid-column: 1/2;
+        margin: 10px 0;
+    }
+
+    .chatAreaWrapper
+    {
+        grid-column: 1/2;
+        margin: 10px 0;
+    }
+
+    .friendList
+    {
+        grid-column: 1/2;
+        margin: 10px;
+    }
+}
